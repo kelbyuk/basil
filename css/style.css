@@ -1,0 +1,72 @@
+/* -- mymoggy styles */
+
+body{
+	font-family: “Helvetica Neue”, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+header{
+	
+}
+nav{
+	
+}
+nav{
+	color:#7ca6bf;
+	margin:11px 0 0;
+	font-size: 14pt;
+}
+nav ul{
+	margin:0;
+	padding:0;
+}
+nav li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+}
+nav li a {
+	text-decoration: none;
+	color:#7ca6bf;
+}
+nav li a:hover {
+	border-bottom: solid 1px #dfdc2a;
+}
+nav li a.active {
+	color:#525252;
+}
+.wrapper{
+	width:980px;
+	margin: 0 auto;
+}
+.primary{
+	float:left;
+	width:300px;
+}
+.secondary{
+	float:left;
+	width:300px;
+}
+section{
+	
+}
+footer{
+	
+}
+
+
+
+#flash_notice, #flash_error {
+    padding: 5px 8px;
+    margin: 10px 0;
+}
+
+#flash_notice {
+    background-color: #CFC;
+    border: solid 1px #6C6;
+}
+
+#flash_error {
+    background-color: #FCC;
+    border: solid 1px #C66;
+}
+
