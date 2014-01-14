@@ -3,6 +3,7 @@
 body{
 	font-family: “Helvetica Neue”, Arial, Helvetica, sans-serif;
 	font-size: 14px;
+	color:#454545;
 }
 header{
 	
@@ -40,17 +41,88 @@ nav li a.active {
 }
 .primary{
 	float:left;
-	width:300px;
+	width:215px;
 }
 .secondary{
 	float:left;
-	width:300px;
+	width:685px;
 }
 section{
 	
 }
 footer{
 	
+}
+
+/* Dashboard cat blocks */
+.dashCat {
+	width : 685px;
+/*	background-color: #ccbbaa;*/
+	float: left;
+	margin-bottom: 10px;
+	border-bottom: solid 1px #dedede;
+}
+.dashCat a {
+	float: right;
+}
+.dashCat ul {
+	margin:0;
+	padding:0;
+	height:25px;
+}
+.dashCat li {
+	list-style-type: none;
+	display: inline;
+	padding-left: 10px;
+	float:left;
+}
+.dashCat li a {
+	text-decoration:none;
+	float: right;
+}
+
+.dashCatName {
+	width:300px;
+	float:left;
+	font-size: 24px;
+	height: 35px;
+}
+.dashCatFunctions {
+	float:right;
+	width:280px;
+	padding-top:3px;
+}
+.dashCatFunctions ul {
+	float: right;
+}
+.dashCatContent {
+	clear:both;
+}
+.dashCatPhotos {
+	float: left;
+	padding-bottom:15px;
+}
+.dashCatPhotos li {
+	width:64px;
+	height:64px;
+	border: 3px solid blue;
+	margin-right:10px;
+	padding-left:0;
+	margin-left:0;
+}
+
+.icoProfile, .icoEdit, .icoRemove{
+	padding-left:28px;
+	height:32px;
+}
+.icoProfile {
+	background: url(/img/view.png) no-repeat 0px -2px;
+}
+.icoEdit{
+	background: url(/img/edit.png) no-repeat 0px -2px;
+}
+.icoRemove{
+	background: url(../img/remove.png) no-repeat 0px -2px;
 }
 
 

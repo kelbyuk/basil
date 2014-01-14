@@ -65,7 +65,7 @@ return array(
 	|
 	*/
 
-	'key' => 'L1i4MmdX72DUYQrjj4u90uvCKHRU35BY',
+	'key' => 'theartoflookingsideways355467',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -106,6 +106,7 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
+		'Way\Generators\GeneratorsServiceProvider',
 
 	),
 

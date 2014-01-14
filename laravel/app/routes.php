@@ -1,17 +1,34 @@
 <?php
+Route::get('/','HomeController@getIndex');
+//Route::controller('cats','CatController');
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the Closure to execute when that URI is requested.
-|
-*/
+// Resource Controllers
+Route::resource('owners','OwnersController');
+Route::resource('cats','CatsController');
+Route::controller('lists','ListsController');
 
-Route::get('/', function()
+Route::resource('cats.photos','PhotoController');
+
+// Authentication Controllers
+Route::get('login', array('as' => 'login', 'uses' => 'AuthController@showLogin'));
+Route::post('login', 'AuthController@postLogin');
+Route::get('logout', 'AuthController@getLogout');
+
+// Secure-Routes
+Route::group(array('before' => 'auth'), function()
 {
-	return View::make('hello');
+    Route::get('dashboard', 'DashboardController@showDashboard');
+
 });
+
+Route::get('register', 'AccountController@showRegister');
+Route::post('register', 'AccountController@postRegister');
+
+//Specific Controller routing
+Route::get('cats/{id}/remove', 'CatsController@destroy');
+Route::get('cats/{id}/missing', 'CatsController@missing');
+Route::get('cats/{id}/poster', 'CatsController@poster');
+Route::get('cats/{id}/home', 'CatsController@home');
+
+//Route::get('add', 'CatController@getAdd');
+//Route::post('add', 'CatController@postAdd'); 

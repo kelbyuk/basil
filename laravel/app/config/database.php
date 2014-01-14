@@ -53,14 +53,14 @@ return array(
 		),
 
 		'mysql' => array(
-			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'database',
-			'username'  => 'root',
-			'password'  => '',
-			'charset'   => 'utf8',
+			'driver'   => 'mysql',
+			'host'     => 'localhost',
+			'database' => 'mogtagco_catbox',
+			'username' => 'root',
+			'password' => 'root',
+			'charset'  => 'utf8',
 			'collation' => 'utf8_unicode_ci',
-			'prefix'    => '',
+			'prefix'   => '',
 		),
 
 		'pgsql' => array(
@@ -84,7 +84,18 @@ return array(
 		),
 
 	),
-
+	/*
+			'mysql' => array(
+			'driver'   => 'mysql',
+			'host'     => '10.168.1.59',
+			'database' => 'mogtagco_catbox',
+			'username' => 'mogtagco_web',
+			'password' => 'Tranqu!1!ty',
+			'charset'  => 'utf8',
+			'collation' => 'utf8_unicode_ci',
+			'prefix'   => '',
+		),
+	*/
 	/*
 	|--------------------------------------------------------------------------
 	| Migration Repository Table
