@@ -7,7 +7,7 @@ Route::resource('owners','OwnersController');
 Route::resource('cats','CatsController');
 Route::controller('lists','ListsController');
 
-Route::resource('cats.photos','PhotoController');
+
 
 // Authentication Controllers
 Route::get('login', array('as' => 'login', 'uses' => 'AuthController@showLogin'));
@@ -18,7 +18,7 @@ Route::get('logout', 'AuthController@getLogout');
 Route::group(array('before' => 'auth'), function()
 {
     Route::get('dashboard', 'DashboardController@showDashboard');
-
+	Route::resource('cats.photos','PhotoController');
 });
 
 Route::get('register', 'AccountController@showRegister');
