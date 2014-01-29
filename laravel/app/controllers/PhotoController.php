@@ -3,7 +3,7 @@
 class PhotoController extends \BaseController {
 	public function __construct()
 	{
-	echo 'spanky times';
+	//echo 'spanky times';
 	//does cat belong to logged in user?
 	
 
@@ -26,10 +26,34 @@ class PhotoController extends \BaseController {
 	 *
 	 * @return Response
 	 */
-	public function create()
+	public function create($id)
 	{
 		//
-		echo 'adding new photo';
+		if (Auth::check())
+		{
+		echo " logged in";  // The user is logged in...
+
+		$cat = Cat::find($id);
+		//echo $cat;
+		$user = $cat->user_id;
+		echo "user is ".$user;
+		//echo $cat->owner_id;
+		}
+
+
+
+/*	$userid = Auth::user()->id; 
+		return View::make('cats.add')->with('userid', $userid);
+
+		} else {
+		return Redirect::to('');
+		}
+
+		echo ' adding new photo '.$catid;
+		return View::make('photos.photo')->with('catid', $catid);	
+
+
+		*/
 	}
 
 	/**

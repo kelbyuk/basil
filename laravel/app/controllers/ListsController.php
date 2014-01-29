@@ -4,7 +4,7 @@ class ListsController extends BaseController {
 
 	public function getIndex()
 	{
-		return View::make('cats.index');
+		//return View::make('cats.index');
 		
 	}
 	
